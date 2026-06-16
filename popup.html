@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>image2.to GPT Image 2 Prompt Starter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="brand-row">
+          <img
+            class="brand-mark"
+            src="assets/logo.png"
+            width="42"
+            height="42"
+            alt="image2.to icon"
+          />
+          <div>
+            <p class="eyebrow">image2.to</p>
+            <h1>GPT Image 2 Prompt Starter</h1>
+          </div>
+        </div>
+        <p class="intro">
+          Build a sharper GPT Image 2 prompt before you generate.
+        </p>
+      </header>
+
+      <section class="section" aria-labelledby="preset-heading">
+        <div class="section-head">
+          <h2 id="preset-heading">Prompt starter</h2>
+          <p>Start from a focused image generation brief.</p>
+        </div>
+        <div id="preset-grid" class="preset-grid" role="radiogroup" aria-labelledby="preset-heading"></div>
+      </section>
+
+      <section class="section" aria-labelledby="notes-heading">
+        <div class="section-head">
+          <h2 id="notes-heading">Image details</h2>
+        </div>
+        <label class="sr-only" for="custom-notes">Image details</label>
+        <textarea
+          id="custom-notes"
+          class="notes-input"
+          rows="2"
+          placeholder="Add subject, style, aspect ratio, text, lighting, or reference details"
+        ></textarea>
+      </section>
+
+      <section class="section" aria-labelledby="prompt-heading">
+        <div class="section-head">
+          <h2 id="prompt-heading">GPT Image 2 prompt</h2>
+        </div>
+        <label class="sr-only" for="prompt-output">GPT Image 2 prompt</label>
+        <textarea id="prompt-output" class="prompt-output" rows="3" readonly></textarea>
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+
+      <footer class="actions">
+        <button id="copy-button" class="button button-primary" type="button">
+          Copy Prompt
+        </button>
+        <button id="open-button" class="button button-secondary" type="button">
+          Open in image2.to
+        </button>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
