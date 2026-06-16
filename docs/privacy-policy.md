@@ -22,6 +22,8 @@ Text entered into the extension is used only to generate the prompt shown in the
 
 If you choose to continue on image2.to, you will be redirected to our website. Website use is governed by the image2.to site privacy policy.
 
+You can review the site policy at https://image2.to/privacy-policy.
+
 ## Contact
 
 For privacy questions, contact:

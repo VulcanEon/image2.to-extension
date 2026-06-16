@@ -42,6 +42,12 @@ https://image2.to
 
 https://image2.to
 
+### GPT Image 2 tool URL
+
+https://image2.to/gpt-image-2
+
 ### Privacy policy URL
+
+https://image2.to/privacy-policy
 
 Publish the copy from `docs/privacy-policy.md` on a public page under `image2.to`, then use that public URL in the store listing.

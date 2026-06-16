@@ -10,7 +10,7 @@ Build better GPT Image 2 prompts for image2.to.
 
 ## Detailed description
 
-image2.to GPT Image 2 Prompt Starter helps you build stronger image-generation prompts before you open the full GPT Image 2 workflow.
+image2.to GPT Image 2 Prompt Starter helps you build stronger image-generation prompts before you open the full [image2.to creation workspace](https://image2.to).
 
 Open the side panel, pick a prompt starter, add optional details for subject, style, aspect ratio, text, lighting, or references, and copy the final prompt in one click.
 
@@ -21,7 +21,7 @@ Use it to:
 - start from practical GPT Image 2 prompt structures
 - add custom image details
 - copy a clearer prompt for later use
-- continue in image2.to when you want the full generation workspace
+- continue in the [GPT Image 2 generation workflow](https://image2.to/gpt-image-2) when you want the full workspace
 
 Current starters include product shots, brand visuals, portraits, social posts, logo concepts, and image edit briefs.
 
