@@ -191,7 +191,10 @@
           grid-template-columns: 1fr;
         }
       }
-    </style>
+    [data-home-product-links] ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
+[data-home-product-links] a { color: var(--text); overflow-wrap: anywhere; }
+@media (min-width: 768px) { [data-home-product-links] ul { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+</style>
   </head>
   <body>
     <main>
@@ -237,9 +240,10 @@
           <p>Copy the assembled prompt or continue into the full image2.to workflow.</p>
         </article>
       </section>
-      <footer data-home-product-links>
+      <footer data-home-product-links data-testid="home-product-links" aria-label="Our Products">
         <h2>Our Products</h2>
         <ul>
+          <li><a href="https://everygenai.app/">EveryGen AI</a></li>
           <li><a href="https://gptimage25.ai/">GPT Image 2.5</a></li>
           <li><a href="https://h3max.io/">H3 Max</a></li>
           <li><a href="https://mestudio.ai/">MeStudio</a></li>
