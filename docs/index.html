@@ -28,11 +28,19 @@
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(circle at 10% 8%, rgba(155, 221, 33, 0.26), transparent 28%),
-          radial-gradient(circle at 92% 78%, rgba(102, 126, 234, 0.14), transparent 26%),
+          radial-gradient(
+            circle at 10% 8%,
+            rgba(155, 221, 33, 0.26),
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at 92% 78%,
+            rgba(102, 126, 234, 0.14),
+            transparent 26%
+          ),
           linear-gradient(135deg, #fffdf8, #f4fbe8);
         color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       }
 
       main {
@@ -191,10 +199,21 @@
           grid-template-columns: 1fr;
         }
       }
-    [data-home-product-links] ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
-[data-home-product-links] a { color: var(--text); overflow-wrap: anywhere; }
-@media (min-width: 768px) { [data-home-product-links] ul { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-</style>
+      [data-home-product-links] ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 24px;
+      }
+      [data-home-product-links] a {
+        color: var(--text);
+        overflow-wrap: anywhere;
+      }
+      @media (min-width: 768px) {
+        [data-home-product-links] ul {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -209,13 +228,18 @@
           </div>
           <h1>Draft sharper GPT Image 2 prompts in Chrome.</h1>
           <p class="lead">
-            This open-source side panel extension helps creators turn quick visual ideas into
-            structured prompts before generating images or planning motion.
+            This open-source side panel extension helps creators turn quick
+            visual ideas into structured prompts before generating images or
+            planning motion.
           </p>
           <nav class="links" aria-label="Related image2.to links">
             <a href="https://image2.to">image2.to AI creation workspace</a>
-            <a href="https://image2.to/gpt-image-2">GPT Image 2 prompt generator</a>
-            <a href="https://image2.to/ai-video-generator">AI video generator workflow</a>
+            <a href="https://image2.to/gpt-image-2"
+              >GPT Image 2 prompt generator</a
+            >
+            <a href="https://image2.to/ai-video-generator"
+              >AI video generator workflow</a
+            >
           </nav>
         </div>
         <figure class="preview">
@@ -229,30 +253,180 @@
       <section class="details" aria-label="Extension highlights">
         <article class="detail">
           <h2>Local prompt drafting</h2>
-          <p>No host permissions, content scripts, account login, or remote prompt upload.</p>
+          <p>
+            No host permissions, content scripts, account login, or remote
+            prompt upload.
+          </p>
         </article>
         <article class="detail">
           <h2>Focused starters</h2>
-          <p>Use practical templates for product shots, portraits, brand visuals, and edits.</p>
+          <p>
+            Use practical templates for product shots, portraits, brand visuals,
+            and edits.
+          </p>
         </article>
         <article class="detail">
           <h2>Fast handoff</h2>
-          <p>Copy the assembled prompt or continue into the full image2.to workflow.</p>
+          <p>
+            Copy the assembled prompt or continue into the full image2.to
+            workflow.
+          </p>
         </article>
       </section>
-      <footer data-home-product-links data-testid="home-product-links" aria-label="Our Products">
+      <footer
+        data-home-product-links
+        data-testid="home-product-links"
+        aria-label="Our Products"
+      >
         <h2>Our Products</h2>
         <ul>
-          <li><a href="https://everygenai.app/">EveryGen AI</a></li>
-<li><a href="https://genjutsu.tv/">Genjutsu</a></li>
-          <li><a href="https://gptimage25.ai/">GPT Image 2.5</a></li>
-          <li><a href="https://h3max.io/">H3 Max</a></li>
-          <li><a href="https://mestudio.ai/">MeStudio</a></li>
-          <li><a href="https://whorules.today/">WhoRules.Today</a></li>
-          <li><a href="https://fightclub.live/">FightClub</a></li>
-          <li><a href="https://image2.to/">Image2</a></li>
-          <li><a href="https://howtopose.ai/">HowToPose</a></li>
-          <li><a href="https://oner.app/">Oner</a></li>
+          <li class="min-w-0">
+            <a
+              href="https://everygenai.app/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >EveryGen AI</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://genjutsu.tv/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Genjutsu</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://gptimage25.ai/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >GPT Image 2.5</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://h3max.io/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >H3 Max</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://mestudio.ai/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >MeStudio</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://whorules.today/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >WhoRules.Today</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://fightclub.live/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >FightClub</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://image2.to/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Image2</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://howtopose.ai/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >HowToPose</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://oner.app/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Oner</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://photocraft.shop/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >PhotoCraft</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://filmcraft.tools/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >FilmCraft</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://artcraft.tools/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >ArtCraft</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://satb.ai/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >SATB.AI</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://howtosurvive.ai/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >HowToSurvive</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://burningbridges.ai/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Burning Bridges</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://stormiiai.com/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Storm II AI</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://hotellobbyai.tv/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >HotelLobby AI</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://raindanceai.xyz/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >RainDance AI</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://seedance25.si/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Seedance 2.5</a
+            >
+          </li>
+          <li class="min-w-0">
+            <a
+              href="https://nanobanana21ai.app/"
+              class="inline-block max-w-full break-words text-inherit underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+              >Nano Banana 2.1</a
+            >
+          </li>
         </ul>
       </footer>
     </main>
